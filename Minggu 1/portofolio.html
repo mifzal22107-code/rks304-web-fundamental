@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Portfolio proyek dan karya Mifzal Awaluddin — Web Development, Machine Learning, dan UI/UX Design." />
+    <title>Mifzal Awaluddin — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="navbar__inner">
+            <a href="index.html" class="navbar__logo">MA.</a>
+            <div class="navbar__links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="portofolio.html" class="active">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-header__title">Proyek &amp; <span class="gradient">Karya</span></h1>
+            <p class="page-header__desc">
+                beberapa proyek Web Development &amp; Karya saya yang pernah saya lakukan.
+            </p>
+        </div>
+    </header>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="portfolio__grid" id="portfolioGrid">
+
+                <article class="glass-card project-card" data-category="web">
+                    <div class="project-card__img">
+                        <img src="assets/img/Proyek.png" alt="Rumah Sehat Haji Irawan" loading="lazy" />
+                        <div class="project-card__overlay"></div>
+                    </div>
+                    <div class="project-card__body">
+                        <h2 class="project-card__title">Rumah Sehat Haji Irawan</h2>
+                        <p class="project-card__desc">
+                            Platform company profile yang menyediakan informasi mengenai klinik haji irawan.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Node.json</span>
+                            <span class="tag">Supabase</span>
+                            <span class="tag">Html</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="https://klinik-lovat.vercel.app/" class="btn btn--sm btn--primary">🔗 Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <p class="footer__copy">&copy; Mifzal Awaluddin</p>
+                <div class="footer__links">
+                    <a href="https://github.com/mifzal22107-code" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://id.linkedin.com/in/mifzal-awaluddin-55a21135b/" target="_blank"
+                        rel="noopener">LinkedIn</a>
+                    <a href="https://www.instagram.com/bgpenz/" target="_blank" rel="noopener">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+        const faders = document.querySelectorAll('.glass-card');
+        faders.forEach(el => el.classList.add('fade-in'));
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        faders.forEach(el => observer.observe(el));
+    </script>
+
+</body>
+
+</html>

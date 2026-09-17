@@ -1,0 +1,220 @@
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website profil pribadi mifzal awaluddin — Mahasiswa Informatika, Web Developer, dan UI/UX Enthusiast." />
+  <title>Mifzal Awaluddin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb"></div>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">MA.</a>
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="portfolio.html">My Portfolio</a>
+        <a href="contact.html">Contact Me</a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero__grid">
+
+        <!-- Text Column -->
+        <div class="hero__content">
+          <p class="hero__greeting">Halo, saya <span>👋</span></p>
+          <h1 class="hero__name">MIFZAL<br /><span class="gradient">AWALUDDIN</span></h1>
+          <p class="hero__role">
+            <span class="typing">Mahasiswa Rekayasa Keamanan Siber</span></p>
+          <p class="hero__bio">
+            Saya adalah seorang Mahasiswa semester 3 di POLITEKNIK BATAM, dengan jurusan informatika prodi rekayasa keamanan siber.
+          </p>
+          <div class="hero__actions">
+            <a href="portfolio.html" class="btn btn--primary">
+              Lihat Portfolio &nbsp;→
+            </a>
+            <a href="contact.html" class="btn btn--outline">
+              Hubungi Saya
+            </a>
+          </div>
+        </div>
+
+        <!-- Photo Column -->
+        <div class="hero__photo-wrapper">
+          <div class="hero__photo-ring">
+            <img
+              src="assets/img/profile.jpg"
+              alt="Foto profil Mifzal Awaluddin"
+              class="hero__photo"
+              width="360"
+              height="360"
+            />
+            <span class="hero__float-badge">💻 Full-Stack Dev</span>
+            <span class="hero__float-badge">🎨 UI/UX Design</span>
+            <span class="hero__float-badge">🤖 Machine Learning</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section class="section" id="about">
+    <div class="container">
+      <span class="section__label">Tentang Saya</span>
+      <h2 class="section__title">Mengenal Lebih Dekat</h2>
+
+      <div class="about__grid">
+        <div class="about__text">
+          <p>
+            Saya adalah mahasiswa Informatika di Universitas Telkom, Bandung.
+            Sejak SMA, saya sudah tertarik dengan dunia teknologi dan memulai
+            perjalanan programming dari bahasa Pascal. Saat ini saya fokus pada
+            pengembangan web full-stack dan eksplorasi di bidang artificial intelligence.
+          </p>
+
+          <div class="about__stats">
+            <div class="stat-card glass-card">
+              <div class="stat-card__number">15+</div>
+              <div class="stat-card__label">Proyek Selesai</div>
+            </div>
+            <div class="stat-card glass-card">
+              <div class="stat-card__number">3+</div>
+              <div class="stat-card__label">Tahun Pengalaman</div>
+            </div>
+            <div class="stat-card glass-card">
+              <div class="stat-card__number">5</div>
+              <div class="stat-card__label">Sertifikasi</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Timeline -->
+        <div class="glass-card">
+          <h3 style="font-size: var(--fs-lg); font-weight: 700; margin-bottom: var(--space-xl);">
+            🎓 Pendidikan &amp; Pengalaman
+          </h3>
+          <div class="timeline">
+            <div class="timeline__item">
+              <span class="timeline__date">2024 — Sekarang</span>
+              <h4 class="timeline__title">Universitas Telkom</h4>
+              <p class="timeline__subtitle">S1 Informatika — Semester 5</p>
+              <p class="timeline__desc">IPK 3.85/4.00 · Aktif di Lab Riset AI dan Komunitas Developer Kampus.</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">2024</span>
+              <h4 class="timeline__title">Magang — PT Teknologi Nusantara</h4>
+              <p class="timeline__subtitle">Frontend Developer Intern</p>
+              <p class="timeline__desc">Mengembangkan dashboard analitik menggunakan React.js dan integrasi REST API.</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">2021 — 2024</span>
+              <h4 class="timeline__title">SMAN 3 Bandung</h4>
+              <p class="timeline__subtitle">Jurusan IPA</p>
+              <p class="timeline__desc">Ketua Klub Sains Komputer · Finalis OSN Informatika Tingkat Provinsi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SKILLS ====== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <span class="section__label">Keahlian Teknis</span>
+      <h2 class="section__title">Tech Stack</h2>
+
+      <div class="skills__categories">
+        <div class="glass-card">
+          <h3 class="skill-category__title">Frontend</h3>
+          <div class="skill-badges">
+            <span class="skill-badge"><span class="dot dot--purple"></span>HTML5</span>
+            <span class="skill-badge"><span class="dot dot--cyan"></span>CSS3</span>
+            <span class="skill-badge"><span class="dot dot--yellow"></span>JavaScript</span>
+            <span class="skill-badge"><span class="dot dot--cyan"></span>React.js</span>
+            <span class="skill-badge"><span class="dot dot--purple"></span>Next.js</span>
+            <span class="skill-badge"><span class="dot dot--cyan"></span>Tailwind CSS</span>
+            <span class="skill-badge"><span class="dot dot--pink"></span>Figma</span>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <h3 class="skill-category__title">Backend</h3>
+          <div class="skill-badges">
+            <span class="skill-badge"><span class="dot dot--green"></span>Node.js</span>
+            <span class="skill-badge"><span class="dot dot--purple"></span>Express.js</span>
+            <span class="skill-badge"><span class="dot dot--cyan"></span>Python</span>
+            <span class="skill-badge"><span class="dot dot--green"></span>Django</span>
+            <span class="skill-badge"><span class="dot dot--yellow"></span>Firebase</span>
+            <span class="skill-badge"><span class="dot dot--cyan"></span>PostgreSQL</span>
+            <span class="skill-badge"><span class="dot dot--purple"></span>MongoDB</span>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <h3 class="skill-category__title">Tools &amp; Lainnya</h3>
+          <div class="skill-badges">
+            <span class="skill-badge"><span class="dot dot--pink"></span>Git &amp; GitHub</span>
+            <span class="skill-badge"><span class="dot dot--cyan"></span>Docker</span>
+            <span class="skill-badge"><span class="dot dot--green"></span>Linux</span>
+            <span class="skill-badge"><span class="dot dot--yellow"></span>VS Code</span>
+            <span class="skill-badge"><span class="dot dot--purple"></span>TensorFlow</span>
+            <span class="skill-badge"><span class="dot dot--cyan"></span>Postman</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy">&copy; Mifzal Awaluddin.</p>
+        <div class="footer__links">
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    // Mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+    // Scroll-based fade-in
+    const faders = document.querySelectorAll('.glass-card, .stat-card, .timeline__item');
+    faders.forEach(el => el.classList.add('fade-in'));
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    faders.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

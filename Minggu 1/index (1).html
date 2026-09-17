@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Website profil pribadi mifzal awaluddin — Mahasiswa Informatika, Web Developer, dan UI/UX Enthusiast." />
+  <title>Mifzal Awaluddin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">MA.</a>
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="portofolio.html">My Portfolio</a>
+        <a href="contact.html">Contact Me</a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero__grid">
+
+
+        <div class="hero__content">
+          <p class="hero__greeting">Halo, saya <span>👋</span></p>
+          <h1 class="hero__name">MIFZAL<br /><span class="gradient">AWALUDDIN</span></h1>
+          <p class="hero__role">
+            <span class="typing">Mahasiswa Rekayasa Keamanan Siber</span>
+          </p>
+          <p class="hero__bio">
+            Saya adalah seorang Mahasiswa semester 3 di POLITEKNIK BATAM, dengan jurusan informatika prodi rekayasa
+            keamanan siber.
+          </p>
+          <div class="hero__actions">
+            <a href="portofolio.html" class="btn btn--primary">
+              Lihat Portfolio &nbsp;→
+            </a>
+            <a href="contact.html" class="btn btn--outline">
+              Hubungi Saya
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__photo-wrapper">
+          <div class="hero__photo-ring">
+            <img src="assets/img/profile.jpg" alt="Foto profil Mifzal Awaluddin" class="hero__photo" width="360"
+              height="360" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <span class="section__label">Tentang Saya</span>
+      <h2 class="section__title">Mengenal Lebih Dekat</h2>
+
+      <div class="about__grid">
+        <div class="about__text">
+          <p>
+            Saya adalah mahasiswa Informatika di Universitas Politeknik Negeri Batam.
+            Seja di Madrasah saya memiliki ketertarikan dalam dunia IT.
+          </p>
+
+          <div class="about__stats">
+            <div class="stat-card glass-card">
+              <div class="stat-card__number">1</div>
+              <div class="stat-card__label">Proyek hampir Selesai</div>
+            </div>
+            <div class="stat-card glass-card">
+              <div class="stat-card__number">2+</div>
+              <div class="stat-card__label">bulan Pengalaman</div>
+            </div>
+            <div class="stat-card glass-card">
+              <div class="stat-card__number">0</div>
+              <div class="stat-card__label">Sertifikasi</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: var(--space-xl);">
+          <div class="glass-card">
+            <h3 style="font-size: var(--fs-lg); font-weight: 700; margin-bottom: var(--space-xl);">
+              🎓 Pendidikan
+            </h3>
+            <div class="timeline">
+              <div class="timeline__item">
+                <div class="timeline__header">
+                  <img src="assets/img/logo-poltek.jpg" alt="logo polibatam" class="timeline__logo">
+                  <div class="timeline__info">
+                    <span class="timeline__date">2025 — Sekarang</span>
+                    <h4 class="timeline__title">Universitas Politeknik Negeri Batam</h4>
+                    <p class="timeline__subtitle">D4 Rekayasa Keamanan Siber — Semester 3</p>
+                    <p class="timeline__desc">IPK -/4.00.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline__item">
+                <div class="timeline__header">
+                  <img src="assets/img/manbatam-crop.png" alt="logo man 1 batam" class="timeline__logo">
+                  <div class="timeline__info">
+                    <span class="timeline__date">2022 — 2025</span>
+                    <h4 class="timeline__title">MAN 1 BATAM</h4>
+                    <p class="timeline__subtitle">Jurusan UMUM</p>
+                    <p class="timeline__desc">menjadi seorang siswa biasa pada umumnya</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card">
+            <h3 style="font-size: var(--fs-lg); font-weight: 700; margin-bottom: var(--space-xl);">
+              💼 Pengalaman Kerja
+            </h3>
+            <div class="timeline">
+              <div class="timeline__item">
+                <div class="timeline__header">
+                  <img src="assets/img/logistik.avif" alt="logo logistik" class="timeline__logo">
+                  <div class="timeline__info">
+                    <span class="timeline__date">2025 November — 2026 Agustus</span>
+                    <h4 class="timeline__title">PEGAUNIHAN</h4>
+                    <p class="timeline__subtitle">Warehouse Logistik</p>
+                    <p class="timeline__desc">Bekerja sebagai operator di sebuah perusahaan dalam bidang logistik
+                      barang.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="container">
+      <span class="section__label">Keahlian Teknis</span>
+      <h2 class="section__title">Tech Stack</h2>
+
+      <div class="skills__categories">
+        <div class="glass-card">
+          <h3 class="skill-category__title">Frontend</h3>
+          <div class="skill-badges">
+            <span class="skill-badge"><span class="dot dot--purple"></span>HTML</span>
+            <span class="skill-badge"><span class="dot dot--cyan"></span>CSS</span>
+            <span class="skill-badge"><span class="dot dot--yellow"></span>JavaScript</span>
+            <span class="skill-badge"><span class="dot dot--cyan"></span>React.js</span>
+            <span class="skill-badge"><span class="dot dot--purple"></span>Next.js</span>
+            <span class="skill-badge"><span class="dot dot--cyan"></span>Tailwind CSS</span>
+            <span class="skill-badge"><span class="dot dot--pink"></span>Figma</span>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <h3 class="skill-category__title">Backend</h3>
+          <div class="skill-badges">
+            <span class="skill-badge"><span class="dot dot--green"></span>Node.js</span>
+            <span class="skill-badge"><span class="dot dot--purple"></span>Express.js</span>
+            <span class="skill-badge"><span class="dot dot--cyan"></span>Python</span>
+            <span class="skill-badge"><span class="dot dot--yellow"></span>Supabase</span>
+            <span class="skill-badge"><span class="dot dot--purple"></span>MongoDB</span>
+            <span class="skill-badge"><span class="dot dot--red"></span>PHP</span>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <h3 class="skill-category__title">Tools &amp; Lainnya</h3>
+          <div class="skill-badges">
+            <span class="skill-badge"><span class="dot dot--pink"></span>GitHub</span>
+            <span class="skill-badge"><span class="dot dot--green"></span>Ubuntu Linux</span>
+            <span class="skill-badge"><span class="dot dot--yellow"></span>VS Code</span>
+            <span class="skill-badge"><span class="dot dot--cyan"></span>AntiGravity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy">&copy; Mifzal Awaluddin.</p>
+        <div class="footer__links">
+          <a href="https://github.com/mifzal22107-code" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://id.linkedin.com/in/mifzal-awaluddin-55a21135b/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/bgpenz/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+    const faders = document.querySelectorAll('.glass-card, .stat-card, .timeline__item');
+    faders.forEach(el => el.classList.add('fade-in'));
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    faders.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+
+</html>

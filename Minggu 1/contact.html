@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Hubungi Mifzal Awaluddin untuk konsultasi, kolaborasi proyek, atau pertanyaan umum." />
+    <title>Mifzal Awaluddin — Contact</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="navbar__inner">
+            <a href="index.html" class="navbar__logo">MA.</a>
+            <div class="navbar__links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="portofolio.html">Portfolio</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+            <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-header__title">Mari <span class="gradient">Berkolaborasi</span></h1>
+            <p class="page-header__desc">
+                Tertarik untuk berdiskusi atau bekerja sama dalam sebuah proyek?
+                Jangan ragu untuk menghubungi saya melalui formulir di bawah ini.
+            </p>
+        </div>
+    </header>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="contact__grid">
+
+                <aside class="glass-card contact__info-card">
+                    <h2 class="contact__info-title">Info Kontak</h2>
+                    <p class="contact__info-text">
+                        Saya terbuka untuk peluang freelance, kolaborasi riset, atau sekadar ngobrol
+                        tentang teknologi. Respon biasanya dalam 1×24 jam.
+                    </p>
+
+                    <div class="contact__detail">
+                        <div class="contact__detail-icon">📧</div>
+                        <div>
+                            <p class="contact__detail-label">Email</p>
+                            <p class="contact__detail-value">mifzal22107@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__detail">
+                        <div class="contact__detail-icon">📱</div>
+                        <div>
+                            <p class="contact__detail-label">Telepon</p>
+                            <p class="contact__detail-value">+62 896-7944-1438</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__detail">
+                        <div class="contact__detail-icon">📍</div>
+                        <div>
+                            <p class="contact__detail-label">Lokasi</p>
+                            <p class="contact__detail-value">Bandung, Jawa Barat, Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__detail">
+                        <div class="contact__detail-icon">🕐</div>
+                        <div>
+                            <p class="contact__detail-label">Jam Kerja</p>
+                            <p class="contact__detail-value">Senin — Jumat, 09:00 — 18:00 WIB</p>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="glass-card contact__form">
+                    <form id="contactForm" action="#" method="POST" novalidate>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Nama Lengkap <span class="required">*</span></label>
+                                <input type="text" id="fullName" name="fullName" class="form-input"
+                                    placeholder="Masukkan nama lengkap" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Alamat Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" class="form-input"
+                                    placeholder="nama@email.com" required />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="category">Kategori / Keperluan <span class="required">*</span></label>
+                                <select id="category" name="category" class="form-select" required>
+                                    <option value="" disabled selected>Pilih kategori</option>
+                                    <option value="konsultasi">Konsultasi</option>
+                                    <option value="kolaborasi">Kolaborasi Proyek</option>
+                                    <option value="pertanyaan">Pertanyaan Umum</option>
+                                    <option value="freelance">Penawaran Freelance</option>
+                                    <option value="lainnya">Lainnya</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subjek</label>
+                                <input type="text" id="subject" name="subject" class="form-input"
+                                    placeholder="Topik pesan Anda" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Estimasi Budget (opsional)</label>
+                            <select id="budget" name="budget" class="form-select">
+                                <option value="" disabled selected>Pilih range budget</option>
+                                <option value="< 1jt">&lt; Rp 1.000.000</option>
+                                <option value="1-5jt">Rp 1.000.000 — Rp 5.000.000</option>
+                                <option value="5-15jt">Rp 5.000.000 — Rp 15.000.000</option>
+                                <option value="> 15jt">&gt; Rp 15.000.000</option>
+                                <option value="discuss">Diskusikan lebih lanjut</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Pesan <span class="required">*</span></label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5"
+                                placeholder="Tuliskan pesan atau detail proyek Anda di sini..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-checkbox">
+                                <input type="checkbox" name="agree" required />
+                                <span>Saya menyetujui bahwa data yang saya kirim akan digunakan untuk merespon pesan
+                                    saya.</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" id="submitBtn" class="btn btn--primary btn--submit">
+                            🚀 Kirim Pesan
+                        </button>
+
+                    </form>
+
+                    <div id="successMsg" style="display:none; text-align:center; padding: var(--space-2xl) 0;">
+                        <div style="font-size: 3rem; margin-bottom: var(--space-md);">✅</div>
+                        <h3 style="font-size: var(--fs-2xl); font-weight: 700; margin-bottom: var(--space-sm);">Pesan
+                            Terkirim!</h3>
+                        <p style="color: var(--text-secondary);">Terima kasih telah mengisi form, anda aakan di alhikan langsung ke wa admin kami.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <p class="footer__copy">&copy; Mifzal Awaluddin</p>
+                <div class="footer__links">
+                    <a href="https://github.com/mifzal22107-code" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://id.linkedin.com/in/mifzal-awaluddin-55a21135b/" target="_blank"
+                        rel="noopener">LinkedIn</a>
+                    <a href="https://www.instagram.com/bgpenz/" target="_blank" rel="noopener">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+        const form = document.getElementById('contactForm');
+        const successMsg = document.getElementById('successMsg');
+        const NOMOR_WA = '6289679441438';
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+
+            const nama = document.getElementById('fullName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const kategori = document.getElementById('category').value;
+            const subjek = document.getElementById('subject').value.trim() || '-';
+            const budget = document.getElementById('budget').value || 'Diskusikan lebih lanjut';
+            const pesan = document.getElementById('message').value.trim();
+
+            const textWa = `Halo Mifzal, saya menghubungi Anda melalui formulir website portofolio:%0A%0A` +
+                `👤 *Nama:* ${encodeURIComponent(nama)}%0A` +
+                `📧 *Email:* ${encodeURIComponent(email)}%0A` +
+                `🏷️ *Keperluan:* ${encodeURIComponent(kategori)}%0A` +
+                `📌 *Subjek:* ${encodeURIComponent(subjek)}%0A` +
+                `💰 *Budget:* ${encodeURIComponent(budget)}%0A%0A` +
+                `📝 *Pesan:*%0A${encodeURIComponent(pesan)}`;
+
+            form.style.display = 'none';
+            successMsg.style.display = 'block';
+            successMsg.style.animation = 'fadeSlideUp 0.5s var(--ease-out) both';
+
+            window.open(`https://api.whatsapp.com/send?phone=${NOMOR_WA}&text=${textWa}`, '_blank');
+        });
+
+        const faders = document.querySelectorAll('.glass-card');
+        faders.forEach(el => el.classList.add('fade-in'));
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        faders.forEach(el => observer.observe(el));
+    </script>
+
+</body>
+
+</html>
